@@ -1,93 +1,59 @@
-// /components/Header.js
-// VERSIÓN 3.0 - Menú Móvil Funcional (Hamburguesa)
-
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white shadow-sm sticky top-0 z-50">
-      <nav className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24">
-          
-          {/* --- LOGO (Izquierda) --- */}
-          <div className="flex-shrink-0 cursor-pointer">
-            <Link href="/">
-              <a className="flex items-center" onClick={() => setIsMenuOpen(false)}>
-                <Image 
-                  src="/logoprincipal.png" 
-                  alt="EMCOTIC Logo"
-                  width={100}
-                  height={100}
-                  objectFit="contain"
-                  priority
-                />
-              </a>
-            </Link>
-          </div>
-          
-          {/* --- MENÚ DE ESCRITORIO (Oculto en móviles) --- */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              <Link href="/quienes-somos">
-                <a className="text-lg font-medium text-gray-600 hover:text-emcotic-blue transition-colors duration-200">
-                  Quiénes Somos
-                </a>
-              </Link>
-              <Link href="/servicios">
-                <a className="text-lg font-medium text-gray-600 hover:text-emcotic-blue transition-colors duration-200">
-                  Productos y Servicios
-                </a>
-              </Link>
-            </div>
-          </div>
-          
-          {/* --- BOTÓN DE MENÚ MÓVIL (Visible solo en móviles) --- */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-600 hover:text-emcotic-blue focus:outline-none p-2"
-            >
-              {/* Icono SVG: Si está abierto muestra X, si no, muestra Hamburguesa */}
-              <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                {isMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
-          </div>
-          
-        </div>
+    <header className="site-nav">
+      <Link href="/" className="nav-logo" onClick={() => setMenuOpen(false)}>
+        <Image src="/logoprincipal.png" alt="EMCOTIC S.A.S" width={120} height={38} style={{ objectFit: 'contain', height: '38px', width: 'auto' }} priority />
+      </Link>
+
+      {/* Desktop links */}
+      <nav className="nav-links" style={{ display: menuOpen ? 'none' : undefined }}>
+        <a href="#servicios">Servicios</a>
+        <Link href="/quienes-somos">Quiénes somos</Link>
+        <a href="#caminos" className="cds-link">✦ Caminos del Ser</a>
+        <a href="#contacto">Contacto</a>
       </nav>
 
-      {/* --- DESPLEGABLE DEL MENÚ MÓVIL --- */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
-          <div className="px-4 pt-2 pb-6 space-y-2">
-            <Link href="/quienes-somos">
-              <a 
-                className="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-emcotic-blue hover:bg-gray-50"
-                onClick={() => setIsMenuOpen(false)} // Cierra el menú al hacer clic
-              >
-                Quiénes Somos
-              </a>
-            </Link>
-            <Link href="/servicios">
-              <a 
-                className="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-emcotic-blue hover:bg-gray-50"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Productos y Servicios
-              </a>
-            </Link>
-          </div>
+      {/* Mobile hamburger */}
+      <button
+        onClick={() => setMenuOpen(!menuOpen)}
+        style={{ display: 'none', background: 'none', border: 'none', cursor: 'pointer', padding: '8px' }}
+        className="mobile-menu-btn"
+        aria-label="Menú"
+      >
+        <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">
+          {menuOpen
+            ? <path strokeLinecap="round" d="M6 18L18 6M6 6l12 12" />
+            : <path strokeLinecap="round" d="M4 6h16M4 12h16M4 18h16" />}
+        </svg>
+      </button>
+
+      {/* Mobile dropdown */}
+      {menuOpen && (
+        <div style={{
+          position: 'absolute', top: '64px', left: 0, right: 0,
+          background: 'white', borderBottom: '1px solid var(--blue-pale)',
+          boxShadow: '0 4px 12px rgba(26,58,92,.1)', zIndex: 99,
+          display: 'flex', flexDirection: 'column', padding: '12px 16px', gap: '4px'
+        }}>
+          <a href="#servicios" onClick={() => setMenuOpen(false)} style={{ padding: '10px 12px', color: 'var(--text-light)', fontFamily: 'Raleway, sans-serif', fontWeight: 600, fontSize: '14px', borderRadius: '6px', textDecoration: 'none' }}>Servicios</a>
+          <Link href="/quienes-somos" onClick={() => setMenuOpen(false)} style={{ padding: '10px 12px', color: 'var(--text-light)', fontFamily: 'Raleway, sans-serif', fontWeight: 600, fontSize: '14px', borderRadius: '6px', textDecoration: 'none' }}>Quiénes somos</Link>
+          <a href="#caminos" onClick={() => setMenuOpen(false)} style={{ padding: '10px 12px', color: 'var(--teal-dark)', fontFamily: 'Raleway, sans-serif', fontWeight: 600, fontSize: '14px', borderRadius: '6px', textDecoration: 'none' }}>✦ Caminos del Ser</a>
+          <a href="#contacto" onClick={() => setMenuOpen(false)} style={{ padding: '10px 12px', color: 'var(--text-light)', fontFamily: 'Raleway, sans-serif', fontWeight: 600, fontSize: '14px', borderRadius: '6px', textDecoration: 'none' }}>Contacto</a>
         </div>
       )}
+
+      <style jsx>{`
+        @media (max-width: 640px) {
+          .nav-links { display: none !important; }
+          .mobile-menu-btn { display: block !important; }
+        }
+      `}</style>
     </header>
   );
 }
