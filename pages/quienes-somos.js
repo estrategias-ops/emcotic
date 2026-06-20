@@ -94,7 +94,7 @@ export default function QuienesSomos() {
             <div className="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-6">
               <div className="flex-shrink-0">
                 <div className="w-40 h-40 rounded-full bg-gray-200 overflow-hidden border-4 border-white shadow-lg mx-auto relative">
-                  <Image src="/equipo/jorge_photo.jpg" alt="Jorge Arango" layout="fill" objectFit="cover" objectPosition="center top" />
+                  <Image src="/equipo/jorge.jpg" alt="Jorge Arango" layout="fill" objectFit="cover" objectPosition="center top" />
                 </div>
               </div>
               <div>
@@ -116,7 +116,7 @@ export default function QuienesSomos() {
             <div className="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-6">
               <div className="flex-shrink-0">
                 <div className="w-40 h-40 rounded-full bg-gray-200 overflow-hidden border-4 border-white shadow-lg mx-auto relative">
-                   <Image src="/equipo/javier_photo.jpg" alt="Javier Cantillo" layout="fill" objectFit="cover" objectPosition="center top" />
+                   <Image src="/equipo/javier.jpg" alt="Javier Cantillo" layout="fill" objectFit="cover" objectPosition="center top" />
                 </div>
               </div>
               <div>
@@ -134,33 +134,11 @@ export default function QuienesSomos() {
               </div>
             </div>
 
-            {/* 3. Anasaria Vargas */}
+            {/* 3. Jaime Blanco */}
             <div className="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-6">
               <div className="flex-shrink-0">
                 <div className="w-40 h-40 rounded-full bg-gray-200 overflow-hidden border-4 border-white shadow-lg mx-auto relative">
-                   <Image src="/equipo/anasaria_photo.jpg" alt="Anasaria Vargas" layout="fill" objectFit="cover" objectPosition="center top" />
-                </div>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-emcotic-blue">Anasaria Vargas Calderón</h3>
-                <p className="text-emcotic-cyan font-semibold mb-1">Socia & Directora Financiera y Contable</p>
-                <a href="mailto:ana.vargas@emcotic.com" className="text-sm text-gray-500 hover:text-emcotic-blue mb-3 block transition-colors">ana.vargas@emcotic.com</a>
-
-                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-                  Contadora Pública y Especialista en Finanzas. Aporta una visión estratégica en la gestión de recursos y presupuestos públicos y privados. Su experiencia en entidades como la Gobernación y la Cámara de Comercio garantiza la solidez y transparencia financiera en cada proyecto ejecutado.
-                </p>
-                <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                  <span className="bg-blue-50 text-emcotic-blue px-3 py-1 rounded-full text-xs font-semibold">Finanzas Corporativas</span>
-                  <span className="bg-blue-50 text-emcotic-blue px-3 py-1 rounded-full text-xs font-semibold">Auditoría</span>
-                </div>
-              </div>
-            </div>
-
-            {/* 4. Jaime Blanco */}
-            <div className="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-6">
-              <div className="flex-shrink-0">
-                <div className="w-40 h-40 rounded-full bg-gray-200 overflow-hidden border-4 border-white shadow-lg mx-auto relative">
-                   <Image src="/equipo/jaime_photo.jpg" alt="Jaime Blanco" layout="fill" objectFit="cover" objectPosition="center top" />
+                   <Image src="/equipo/jaime.jpg" alt="Jaime Blanco" layout="fill" objectFit="cover" objectPosition="center top" />
                 </div>
               </div>
               <div>

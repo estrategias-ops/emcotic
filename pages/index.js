@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
-import Header from '../components/Header';
 
 export default function Home() {
   useEffect(() => {
@@ -23,12 +22,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-
       {/* ── HERO ── */}
       <section className="hero">
         <div style={{ marginBottom: '20px' }}>
-          <Image src="/logoprincipal.png" alt="EMCOTIC S.A.S" width={220} height={80} style={{ objectFit: 'contain', height: '64px', width: 'auto' }} priority />
+          <Image src="/logo_emcotic.png" alt="EMCOTIC S.A.S" width={260} height={64} style={{ objectFit: 'contain', height: '64px', width: 'auto' }} priority />
         </div>
         <div className="hero-eyebrow">Innovación y Bienestar · Barranquilla, Colombia</div>
         <h1>Estructuramos tus proyectos,<br /><em>cuidamos a tus líderes.</em></h1>
@@ -62,9 +59,9 @@ export default function Home() {
             </div>
 
             <div className="srv-card">
-              <div className="srv-icon">⚖️</div>
+              <div className="srv-icon">🔍</div>
               <div className="srv-title">Consultoría Especializada</div>
-              <p className="srv-desc">Propiedad intelectual, contratos y derecho de autor. La armadura legal de tus activos digitales y proyectos. Red de consultores senior multidisciplinar con décadas de experiencia acumulada.</p>
+              <p className="srv-desc">Red de consultores senior multidisciplinar con décadas de experiencia acumulada, que incluye especialistas en las principales áreas de la estructura empresarial con enfoque de mejora de procesos con el blindaje de Propiedad intelectual, contratos y derecho de autor que requieren tus activos digitales y proyectos.</p>
             </div>
 
           </div>
