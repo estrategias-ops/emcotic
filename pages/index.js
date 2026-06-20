@@ -25,7 +25,7 @@ export default function Home() {
       {/* ── HERO ── */}
       <section className="hero">
         <div style={{ marginBottom: '20px' }}>
-          <Image src="/logoprincipal.png" alt="EMCOTIC S.A.S" width={220} height={80} style={{ objectFit: 'contain', height: '64px', width: 'auto' }} priority />
+          <Image src="/logo_emcotic.png" alt="EMCOTIC S.A.S" width={260} height={64} style={{ objectFit: 'contain', height: '64px', width: 'auto' }} priority />
         </div>
         <div className="hero-eyebrow">Innovación y Bienestar · Barranquilla, Colombia</div>
         <h1>Estructuramos tus proyectos,<br /><em>cuidamos a tus líderes.</em></h1>
