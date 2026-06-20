@@ -59,7 +59,7 @@ export default function Home() {
             </div>
 
             <div className="srv-card">
-              <div className="srv-icon">🧠</div>
+              <div className="srv-icon">🔍</div>
               <div className="srv-title">Consultoría Especializada</div>
               <p className="srv-desc">Red de consultores senior multidisciplinar con décadas de experiencia acumulada, que incluye especialistas en las principales áreas de la estructura empresarial con enfoque de mejora de procesos con el blindaje de Propiedad intelectual, contratos y derecho de autor que requieren tus activos digitales y proyectos.</p>
             </div>
