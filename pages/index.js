@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
-import Header from '../components/Header';
 
 export default function Home() {
   useEffect(() => {
@@ -22,8 +21,6 @@ export default function Home() {
         <meta name="description" content="Gerencia estratégica de proyectos, tecnología a la medida e inteligencia artificial aplicada al bienestar. Barranquilla, Colombia." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Header />
 
       {/* ── HERO ── */}
       <section className="hero">
@@ -62,9 +59,9 @@ export default function Home() {
             </div>
 
             <div className="srv-card">
-              <div className="srv-icon">⚖️</div>
+              <div className="srv-icon">🧠</div>
               <div className="srv-title">Consultoría Especializada</div>
-              <p className="srv-desc">Propiedad intelectual, contratos y derecho de autor. La armadura legal de tus activos digitales y proyectos. Red de consultores senior multidisciplinar con décadas de experiencia acumulada.</p>
+              <p className="srv-desc">Red de consultores senior multidisciplinar con décadas de experiencia acumulada, que incluye especialistas en las principales áreas de la estructura empresarial con enfoque de mejora de procesos con el blindaje de Propiedad intelectual, contratos y derecho de autor que requieren tus activos digitales y proyectos.</p>
             </div>
 
           </div>
