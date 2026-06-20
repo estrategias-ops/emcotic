@@ -44,7 +44,7 @@ export default function QuienesSomos() {
             </div>
             <div className="bg-gray-100 rounded-lg h-64 md:h-full flex items-center justify-center p-8">
                <Image 
-                  src="/logoprincipal.png" 
+                  src="/logo_emcotic.png" 
                   alt="EMCOTIC Historia" 
                   width={300} 
                   height={300}
