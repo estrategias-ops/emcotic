@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className="site-nav">
       <Link href="/" className="nav-logo" onClick={() => setMenuOpen(false)}>
-        <Image src="/logo_emcotic.png" alt="EMCOTIC S.A.S" width={160} height={38} style={{ objectFit: 'contain', height: '38px', width: 'auto' }} priority />
+        <img src="/logo_emcotic.png" alt="EMCOTIC S.A.S" style={{ height: '36px', width: 'auto' }} />
       </Link>
 
       {/* Desktop links */}

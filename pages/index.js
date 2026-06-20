@@ -19,13 +19,13 @@ export default function Home() {
       <Head>
         <title>EMCOTIC S.A.S — Gerencia de Proyectos, Tecnología e Innovación</title>
         <meta name="description" content="Gerencia estratégica de proyectos, tecnología a la medida e inteligencia artificial aplicada al bienestar. Barranquilla, Colombia." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* ── HERO ── */}
       <section className="hero">
         <div style={{ marginBottom: '20px' }}>
-          <Image src="/logo_emcotic.png" alt="EMCOTIC S.A.S" width={260} height={64} style={{ objectFit: 'contain', height: '64px', width: 'auto' }} priority />
+          {/* logo 1039×294 → proporción 3.54:1 */}
+          <img src="/logo_emcotic.png" alt="EMCOTIC S.A.S" style={{ width: 'auto', height: '80px', maxWidth: '100%' }} />
         </div>
         <div className="hero-eyebrow">Innovación y Bienestar · Barranquilla, Colombia</div>
         <h1>Estructuramos tus proyectos,<br /><em>cuidamos a tus líderes.</em></h1>
