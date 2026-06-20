@@ -19,7 +19,6 @@ export default function Home() {
       <Head>
         <title>EMCOTIC S.A.S — Gerencia de Proyectos, Tecnología e Innovación</title>
         <meta name="description" content="Gerencia estratégica de proyectos, tecnología a la medida e inteligencia artificial aplicada al bienestar. Barranquilla, Colombia." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* ── HERO ── */}
