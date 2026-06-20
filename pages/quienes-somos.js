@@ -44,11 +44,11 @@ export default function QuienesSomos() {
             </div>
             <div className="bg-gray-100 rounded-lg h-64 md:h-full flex items-center justify-center p-8">
                <Image
-                  src="/logo_emcotic.png"
+                  src="/logo_emcotic_2026.png"
                   alt="EMCOTIC Historia"
-                  width={380}
-                  height={108}
-                  style={{ width: '100%', maxWidth: '380px', height: 'auto' }}
+                  width={240}
+                  height={230}
+                  style={{ width: 'auto', maxWidth: '240px', height: 'auto' }}
                   className="opacity-90"
                />
             </div>
