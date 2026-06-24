@@ -35,7 +35,7 @@ export default function Home() {
 
       {/* ── SERVICIOS ── */}
       <section className="services-bg section-padded" id="servicios">
-        <div className="section-inner reveal">
+        <div className="section-inner">
           <div className="section-label">Nuestros servicios</div>
           <div className="section-title">Tres capacidades. Un resultado: tu empresa con activos reales.</div>
           <div className="divider"></div>
@@ -66,7 +66,7 @@ export default function Home() {
 
       {/* ── MÉTRICAS ── */}
       <section className="section-padded" id="quienes">
-        <div className="section-inner reveal">
+        <div className="section-inner">
           <div className="section-label">¿Por qué Emcotic?</div>
           <div className="section-title">Los números hablan por nosotros.</div>
           <div className="divider"></div>
@@ -91,6 +91,22 @@ export default function Home() {
           <div style={{ marginTop: '32px' }}>
             <Link href="/quienes-somos" className="btn-primary">Conoce al equipo →</Link>
           </div>
+        </div>
+      </section>
+
+      {/* ── QUIÉNES SOMOS ── */}
+      <section className="services-bg section-padded" id="quienes-somos-home">
+        <div className="section-inner reveal">
+          <div className="section-label">Quiénes somos</div>
+          <div className="section-title">15 años construyendo lo que importa.</div>
+          <div className="divider"></div>
+          <p style={{ fontSize: '17px', color: 'var(--text-light)', lineHeight: '1.8', maxWidth: '720px', marginBottom: '32px' }}>
+            Fundada en 2010 en Barranquilla, EMCOTIC S.A.S. nació para convertir ideas complejas en activos reales. A lo largo de más de una década hemos movilizado más de COP $37.600 millones en proyectos de alto impacto tecnológico y social, combinando gerencia de proyectos, tecnología propia y un equipo de consultores senior multidisciplinar.
+          </p>
+          <p style={{ fontSize: '17px', color: 'var(--text-light)', lineHeight: '1.8', maxWidth: '720px', marginBottom: '40px' }}>
+            Entendemos que innovar no es solo tecnología: es una estructura legal sólida, una gestión eficiente y una estrategia financiera impecable. Por eso cada proyecto que tocamos queda blindado con propiedad intelectual, contratos robustos y derecho de autor.
+          </p>
+          <Link href="/quienes-somos" className="btn-primary">Conoce al equipo →</Link>
         </div>
       </section>
 
@@ -139,7 +155,7 @@ export default function Home() {
       <footer className="site-footer-full">
         <div className="footer-inner">
           <div className="footer-col">
-            <img src="/logo_nav.png" alt="EMCOTIC S.A.S" style={{ height: '40px', width: 'auto', marginBottom: '10px' }} />
+            <img src="/logo_nav.png" alt="EMCOTIC S.A.S" style={{ height: '40px', width: 'auto', marginBottom: '10px', filter: 'brightness(0) invert(1)', alignSelf: 'flex-start' }} />
             <p className="footer-tagline">Innovación y tecnología para empresas que quieren crecer.</p>
           </div>
           <div className="footer-col">
