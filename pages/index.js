@@ -155,7 +155,7 @@ export default function Home() {
       <footer className="site-footer-full">
         <div className="footer-inner">
           <div className="footer-col">
-            <img src="/logo_nav.png" alt="EMCOTIC S.A.S" style={{ height: '40px', width: 'auto', marginBottom: '10px' }} />
+            <img src="/logo_nav.png" alt="EMCOTIC S.A.S" style={{ height: '40px', width: 'auto', marginBottom: '10px', filter: 'brightness(0) invert(1)', alignSelf: 'flex-start' }} />
             <p className="footer-tagline">Innovación y tecnología para empresas que quieren crecer.</p>
           </div>
           <div className="footer-col">
