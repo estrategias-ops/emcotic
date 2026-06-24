@@ -36,7 +36,7 @@ export default function Home() {
       {/* ── SERVICIOS ── */}
       <section className="services-bg section-padded" id="servicios">
         <div className="section-inner">
-          <img src="/Logo + nombre.png" alt="EMCOTIC" style={{ height: '36px', width: 'auto', marginBottom: '16px', display: 'block' }} />
+          <img src="/logo_emcotic_2026.png" alt="EMCOTIC" style={{ height: '40px', width: 'auto', marginBottom: '12px', display: 'block' }} />
           <div className="section-label">Nuestros servicios</div>
           <div className="section-title">Tres capacidades. Un resultado: tu empresa con activos reales.</div>
           <div className="divider"></div>
@@ -68,7 +68,7 @@ export default function Home() {
       {/* ── MÉTRICAS ── */}
       <section className="section-padded" id="quienes">
         <div className="section-inner">
-          <img src="/Logo + nombre.png" alt="EMCOTIC" style={{ height: '36px', width: 'auto', marginBottom: '16px', display: 'block' }} />
+          <img src="/Logo + nombre.png" alt="EMCOTIC" style={{ height: '36px', width: 'auto', marginBottom: '12px', display: 'block' }} />
           <div className="section-label">¿Por qué Emcotic?</div>
           <div className="section-title">Los números hablan por nosotros.</div>
           <div className="divider"></div>
@@ -99,7 +99,7 @@ export default function Home() {
       {/* ── QUIÉNES SOMOS ── */}
       <section className="services-bg section-padded" id="quienes-somos-home">
         <div className="section-inner reveal">
-          <img src="/Logo + nombre.png" alt="EMCOTIC" style={{ height: '36px', width: 'auto', marginBottom: '16px', display: 'block' }} />
+          <img src="/Logo + nombre.png" alt="EMCOTIC" style={{ height: '32px', width: 'auto', marginBottom: '12px', display: 'block' }} />
           <div className="section-label">Quiénes somos</div>
           <div className="section-title">15 años construyendo lo que importa.</div>
           <div className="divider"></div>
