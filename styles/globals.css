@@ -51,7 +51,7 @@ h1, h2, h3, h4 { font-family: 'Raleway', sans-serif; }
   display: flex; align-items: center;
   text-decoration: none; margin-right: auto;
 }
-.nav-logo img { height: 38px; width: auto; display: block; }
+.nav-logo img { height: 48px; width: auto; display: block; }
 .nav-links { display: flex; align-items: center; gap: 6px; }
 .nav-links a {
   font-family: 'Raleway', sans-serif; font-size: 13px; font-weight: 600;
