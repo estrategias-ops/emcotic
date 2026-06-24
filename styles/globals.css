@@ -316,7 +316,7 @@ h1, h2, h3, h4 { font-family: 'Raleway', sans-serif; }
 
 /* ── FOOTER FULL ── */
 .site-footer-full {
-  background: #111f2e;
+  background: linear-gradient(to bottom, var(--blue-dark) 0%, #0a1a2e 100%);
   color: #8fa3bc;
   font-size: 13px;
   padding: 48px 2rem 0;
