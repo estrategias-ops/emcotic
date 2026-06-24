@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* ── QUIÉNES SOMOS ── */}
-      <section className="services-bg section-padded" id="quienes-somos-home">
+      <section className="section-padded" id="quienes-somos-home">
         <div className="section-inner reveal">
           <img src="/logo_compacto.png" alt="EMCOTIC" style={{ height: '32px', width: 'auto', marginBottom: '12px', display: 'block' }} />
           <div className="section-label">Quiénes somos</div>
