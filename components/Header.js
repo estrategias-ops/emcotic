@@ -15,7 +15,7 @@ export default function Header() {
       <nav className="nav-links" style={{ display: menuOpen ? 'none' : undefined }}>
         <a href="/#servicios">Servicios</a>
         <Link href="/quienes-somos">Quiénes somos</Link>
-        <a href="/#caminos" className="cds-link">✦ Caminos del Ser</a>
+        <a href="/#portafolio">Portafolio</a>
         <a href="/#contacto">Contacto</a>
       </nav>
 
@@ -43,7 +43,7 @@ export default function Header() {
         }}>
           <a href="/#servicios" onClick={() => setMenuOpen(false)} style={{ padding: '10px 12px', color: 'var(--text-light)', fontFamily: 'Raleway, sans-serif', fontWeight: 600, fontSize: '14px', borderRadius: '6px', textDecoration: 'none' }}>Servicios</a>
           <Link href="/quienes-somos" onClick={() => setMenuOpen(false)} style={{ padding: '10px 12px', color: 'var(--text-light)', fontFamily: 'Raleway, sans-serif', fontWeight: 600, fontSize: '14px', borderRadius: '6px', textDecoration: 'none' }}>Quiénes somos</Link>
-          <a href="/#caminos" onClick={() => setMenuOpen(false)} style={{ padding: '10px 12px', color: 'var(--teal-dark)', fontFamily: 'Raleway, sans-serif', fontWeight: 600, fontSize: '14px', borderRadius: '6px', textDecoration: 'none' }}>✦ Caminos del Ser</a>
+          <a href="/#portafolio" onClick={() => setMenuOpen(false)} style={{ padding: '10px 12px', color: 'var(--text-light)', fontFamily: 'Raleway, sans-serif', fontWeight: 600, fontSize: '14px', borderRadius: '6px', textDecoration: 'none' }}>Portafolio</a>
           <a href="/#contacto" onClick={() => setMenuOpen(false)} style={{ padding: '10px 12px', color: 'var(--text-light)', fontFamily: 'Raleway, sans-serif', fontWeight: 600, fontSize: '14px', borderRadius: '6px', textDecoration: 'none' }}>Contacto</a>
         </div>
       )}
