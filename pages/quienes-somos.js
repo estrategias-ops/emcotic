@@ -95,7 +95,7 @@ export default function QuienesSomos() {
             <div className="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-6">
               <div className="flex-shrink-0">
                 <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg mx-auto relative" style={{ background: 'var(--gray-200)', border: '4px solid var(--blue-pale)' }}>
-                  <Image src="/equipo/jorge.jpg" alt="Jorge Arango" layout="fill" objectFit="cover" objectPosition="center top" />
+                  <Image src="/equipo/jorge.jpg" alt="Jorge Arango" fill sizes="160px" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
                 </div>
               </div>
               <div>
@@ -116,7 +116,7 @@ export default function QuienesSomos() {
             <div className="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-6">
               <div className="flex-shrink-0">
                 <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg mx-auto relative" style={{ background: 'var(--gray-200)', border: '4px solid var(--blue-pale)' }}>
-                  <Image src="/equipo/javier.jpg" alt="Javier Cantillo" layout="fill" objectFit="cover" objectPosition="center top" />
+                  <Image src="/equipo/javier.jpg" alt="Javier Cantillo" fill sizes="160px" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
                 </div>
               </div>
               <div>
@@ -137,7 +137,7 @@ export default function QuienesSomos() {
             <div className="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-6">
               <div className="flex-shrink-0">
                 <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg mx-auto relative" style={{ background: 'var(--gray-200)', border: '4px solid var(--blue-pale)' }}>
-                  <Image src="/equipo/jaime.jpg" alt="Jaime Blanco" layout="fill" objectFit="cover" objectPosition="center top" />
+                  <Image src="/equipo/jaime.jpg" alt="Jaime Blanco" fill sizes="160px" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
                 </div>
               </div>
               <div>
